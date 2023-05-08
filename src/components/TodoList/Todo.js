@@ -5,8 +5,8 @@ export default class Todo extends Component {
     render() {
         return (
             // 'completed' class for completed todos
-            <div className='complete' style={{ display: 'flex' }}>
-                <li className="todo-item">title</li>
+            <div className='todo complete' style={{ display: 'flex' }}>
+                <li className="todo-item">{this.props.title}</li>
 
                 <button className="check-btn">
                     <i className="fas fa-check" aria-hidden="true"></i>
