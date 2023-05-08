@@ -20,14 +20,12 @@ export default class TodoList extends Component {
 
     }
 
-  
-
     render() {
         return (
             <>
                 <Header />
-                <form >
-                    <input type="text" className="todo-input" maxLength="40" />
+                <form>
+                    <input type="text" className="todo-input" maxLength="40"/>
                     <button className="todo-button" type="submit">
                         <i className="fas fa-plus-square"></i>
                     </button>
@@ -43,6 +41,7 @@ export default class TodoList extends Component {
                 <div className="todo-container">
                     <ul className="todo-list">
                         
+                            { <Todo /> }
                         
                      
                     </ul>
