@@ -13,7 +13,7 @@ export default class TodoList extends Component {
 
     this.addTodo = this.addTodo.bind(this);
     // this.removeTodo = this.removeTodo.bind(this)
-    // this.editTodo = this.editTodo.bind(this)
+    this.editTodo = this.editTodo.bind(this)
     this.todoTitleHandler = this.todoTitleHandler.bind(this);
     // this.statusHandler = this.statusHandler.bind(this)
   }
@@ -37,6 +37,10 @@ export default class TodoList extends Component {
         todoTitle: ''
       };
     });
+  }
+
+  editTodo(event){
+
   }
 
   render() {
